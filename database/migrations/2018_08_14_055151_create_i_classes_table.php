@@ -18,8 +18,13 @@ class CreateIClassesTable extends Migration
             $table->string('name');
             $table->integer('numeric_value');
             $table->integer('order')->default(0);
-            $table->string('group',15)->nullable();
+            $table->string('group',20)->nullable();
+            $table->unsignedTinyInteger('duration')->default(1);
+            $table->boolean('have_selective_subject')->default(false);
+            $table->unsignedTinyInteger('max_selective_subject')->nullable();
+            $table->boolean('have_elective_subject')->default(false);
             $table->text('note')->nullable();
+            $table->boolean('is_open_for_admission')->default(false);
             $table->enum('status', [0,1])->default(0);
             $table->timestamps();
             $table->softDeletes();

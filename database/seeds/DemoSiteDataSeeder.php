@@ -21,7 +21,7 @@ class DemoSiteDataSeeder extends Seeder
     public function run()
     {
         //truncate previous data
-        echo 'deleting old data.....';
+        echo PHP_EOL, 'deleting old data.....';
         $this->deletePreviousData();
 
         //seed common settings
@@ -78,7 +78,7 @@ class DemoSiteDataSeeder extends Seeder
         $this->eventData();
 
 
-        echo PHP_EOL , 'seeding completed.';
+        echo PHP_EOL , 'seeding completed.', PHP_EOL;
 
     }
 
@@ -140,7 +140,7 @@ class DemoSiteDataSeeder extends Seeder
         $data['name'] = 'Cloud School';
         $data['short_name'] = 'CloudSchool';
         $data['facebook'] = '#';
-        $data['google'] = '#';
+        $data['instagram'] = '#';
         $data['twitter'] = '#';
         $data['youtube'] = '#';
 
@@ -433,11 +433,11 @@ class DemoSiteDataSeeder extends Seeder
         $data = [
             'name' => 'Fakir Chand',
             'image' => '',
-            'designation' => 'Head Master',
+            'designation' => 'Headmaster',
             'qualification' => 'M.A in English',
             'description' => 'Super cool boy!',
             'facebook' => '#',
-            'google' => '#',
+            'instagram' => '#',
             'twitter' => '#',
         ];
 
@@ -453,7 +453,7 @@ class DemoSiteDataSeeder extends Seeder
             'qualification' => 'Hons in English',
             'description' => '',
             'facebook' => '#',
-            'google' => '#',
+            'instagram' => '#',
             'twitter' => '#',
         ];
 
@@ -473,8 +473,8 @@ class DemoSiteDataSeeder extends Seeder
         }
 
         $data = [
-            'title' => 'Annual function 2018',
-            'event_time' =>  Carbon::createFromFormat('d/m/Y h:i a', '04/12/2018 01:36 pm'),
+            'title' => 'Annual function '.date('Y'),
+            'event_time' =>  Carbon::createFromFormat('d/m/Y h:i a', '20/12/'.date('Y').' 03:00 pm'),
             'cover_photo' => '',
             'slider_1' => '',
             'slider_2' => '',
@@ -508,7 +508,7 @@ class DemoSiteDataSeeder extends Seeder
 
 
         $data['title'] = 'Farewell Party';
-        $data['event_time'] = Carbon::createFromFormat('d/m/Y h:i a', '20/12/2018 03:00 pm');
+        $data['event_time'] = Carbon::now()->addDays(15);
         $data['cover_photo'] = null;
         $data['tags'] = 'farewell,party';
         $data['cover_video'] = '<iframe src="https://www.youtube.com/embed/pXfqbimmBhE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';

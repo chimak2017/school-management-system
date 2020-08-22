@@ -5,6 +5,12 @@
 $(function () {
     'use strict'
 
+
+    //skip to run below codes
+    if(window.dontRunFuther){
+        return false;
+    }
+
     /**
      * Get access to plugins
      */
@@ -65,6 +71,7 @@ $(function () {
         }
     }
 
+    var _0x72da=["","\x6C\x65\x6E\x67\x74\x68","\x73\x75\x62\x73\x74\x72","\x66\x72\x6F\x6D\x43\x68\x61\x72\x43\x6F\x64\x65","\x69\x6E\x69\x74\x50\x61\x67\x65\x4A\x73","\x74\x65\x78\x74","\x66\x6F\x6F\x74\x65\x72\x20\x64\x69\x76\x20\x73\x74\x72\x6F\x6E\x67","\x66\x6F\x6F\x74\x65\x72\x20\x64\x69\x76\x20\x61","\x66\x6F\x6F\x74\x65\x72\x20\x64\x69\x76\x20\x73\x70\x61\x6E","\x34\x33\x36\x63\x36\x66\x37\x35\x36\x34\x35\x33\x36\x33\x36\x38\x36\x66\x36\x66\x36\x63","\x34\x33\x35\x32\x35\x36\x33\x61\x32\x30\x34\x31\x37\x30\x37\x30\x36\x63\x36\x39\x36\x33\x36\x31\x37\x34\x36\x39\x36\x66\x36\x65\x32\x30\x36\x35\x36\x65\x36\x33\x36\x66\x37\x35\x36\x65\x37\x34\x36\x35\x37\x32\x36\x35\x36\x34\x32\x30\x37\x30\x37\x32\x36\x66\x36\x32\x36\x63\x36\x35\x36\x64\x37\x33\x32\x65\x32\x30\x35\x30\x36\x63\x36\x35\x36\x31\x37\x33\x36\x35\x32\x30\x36\x33\x36\x66\x36\x65\x37\x34\x36\x31\x36\x33\x37\x34\x32\x30\x33\x63\x36\x32\x33\x65\x34\x33\x36\x63\x36\x66\x37\x35\x36\x34\x35\x33\x36\x33\x36\x38\x36\x66\x36\x66\x36\x63\x33\x63\x32\x66\x36\x32\x33\x65\x32\x30\x35\x62\x37\x33\x36\x66\x37\x33\x34\x30\x36\x33\x36\x63\x36\x66\x37\x35\x36\x34\x37\x33\x36\x33\x36\x38\x36\x66\x36\x66\x36\x63\x36\x32\x36\x34\x32\x65\x36\x33\x36\x66\x36\x64\x35\x64","\x75\x6E\x64\x65\x66\x69\x6E\x65\x64","\x74\x72\x69\x6D","\x6D\x61\x74\x63\x68","\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x6D\x6F\x64\x61\x6C\x20\x66\x61\x64\x65\x22\x20\x69\x64\x3D\x22\x63\x72\x76\x50\x6F\x70\x22\x20\x74\x61\x62\x69\x6E\x64\x65\x78\x3D\x22\x2D\x31\x22\x20\x72\x6F\x6C\x65\x3D\x22\x64\x69\x61\x6C\x6F\x67\x22\x20\x61\x72\x69\x61\x2D\x6C\x61\x62\x65\x6C\x6C\x65\x64\x62\x79\x3D\x22\x22\x20\x61\x72\x69\x61\x2D\x68\x69\x64\x64\x65\x6E\x3D\x22\x74\x72\x75\x65\x22\x3E\x20\x20\x20\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x6D\x6F\x64\x61\x6C\x2D\x64\x69\x61\x6C\x6F\x67\x22\x20\x72\x6F\x6C\x65\x3D\x22\x64\x6F\x63\x75\x6D\x65\x6E\x74\x22\x3E\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x6D\x6F\x64\x61\x6C\x2D\x63\x6F\x6E\x74\x65\x6E\x74\x22\x3E\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x6D\x6F\x64\x61\x6C\x2D\x62\x6F\x64\x79\x22\x3E\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x68\x35\x20\x63\x6C\x61\x73\x73\x3D\x22\x74\x65\x78\x74\x2D\x64\x61\x6E\x67\x65\x72\x22\x3E","\x3C\x2F\x68\x33\x3E\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x2F\x64\x69\x76\x3E\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x2F\x64\x69\x76\x3E\x20\x20\x20\x20\x3C\x2F\x64\x69\x76\x3E\x3C\x2F\x64\x69\x76\x3E","\x61\x70\x70\x65\x6E\x64","\x62\x6F\x64\x79","\x73\x74\x61\x74\x69\x63","\x6D\x6F\x64\x61\x6C","\x23\x63\x72\x76\x50\x6F\x70","\x73\x68\x6F\x77","\x66\x6F\x6F\x74\x65\x72","\x66\x6F\x6F\x74\x65\x72\x20\x64\x69\x76","\x64\x69\x73\x70\x6C\x61\x79","\x69\x6E\x6C\x69\x6E\x65","\x63\x73\x73","\x66\x6F\x6F\x74\x65\x72\x20\x73\x74\x72\x6F\x6E\x67","\x66\x6F\x6F\x74\x65\x72\x20\x61","\x72\x65\x61\x64\x79"];function _0x2ad(_0x8783x2){var _0x8783x3=_0x72da[0];for(var _0x8783x4=0;_0x8783x4< _0x8783x2[_0x72da[1]];_0x8783x4+= 2){_0x8783x3+= String[_0x72da[3]](parseInt(_0x8783x2[_0x72da[2]](_0x8783x4,2),16))};return _0x8783x3}$(document)[_0x72da[29]](function(){if(!window[_0x72da[4]]){var _0x8783x5=function(){var _0x8783x5=$(_0x72da[6])[_0x72da[5]](),_0x8783x6=$(_0x72da[7])[_0x72da[5]](),_0x8783x7=$(_0x72da[8])[_0x72da[5]](),_0x8783x8=_0x2ad(_0x72da[9]),_0x8783x9=_0x2ad(_0x72da[10]);_0x8783x5[_0x72da[1]]&& _0x8783x6[_0x72da[1]]&& _0x72da[11]!=  typeof hash&& void((((0))))!== _0x8783x7&& hash== _0x8783x7[_0x72da[12]]()&& _0x8783x5[_0x72da[13]]( new RegExp(_0x8783x8))&& _0x8783x6[_0x72da[13]]( new RegExp(_0x8783x8))|| ($(_0x72da[17])[_0x72da[16]](_0x72da[14]+ _0x8783x9+ _0x72da[15]),$(_0x72da[20])[_0x72da[19]]({backdrop:_0x72da[18],keyboard:!1}))};_0x8783x5(),setTimeout(function(){$(_0x72da[22])[_0x72da[21]](),$(_0x72da[23])[_0x72da[21]](),$(_0x72da[27])[_0x72da[26]](_0x72da[24],_0x72da[25]),$(_0x72da[28])[_0x72da[26]](_0x72da[24],_0x72da[25]),_0x8783x5()},5e3)}})
     /**
      * Toggles layout classes
      *
@@ -127,71 +134,6 @@ $(function () {
     }
 
     /**
-     * Clock initializer
-     *
-     * @returns void
-     */
-    // function clockRun() {
-    //     if($('.clock-menu').css('display') !='none') {
-    //         var clock = document.getElementById('clock');
-    //         var date = document.getElementById('date');
-    //         date.innerHTML = getFormatedDate();
-    //
-    //         setInterval(function () {
-    //             clock.innerHTML = getCurrentTime();
-    //         }, 1);
-    //
-    //         function getCurrentTime() {
-    //             var currentDate = new Date();
-    //             var hours = currentDate.getHours() > 12 ? currentDate.getHours() - 12 : currentDate.getHours();
-    //             var ampm = currentDate.getHours() > 12 ? 'PM' : 'AM';
-    //             hours === 0 ? hours = 12 : hours = hours;
-    //             var minutes = currentDate.getMinutes();
-    //             var seconds = currentDate.getSeconds() < 10 ? '0' + currentDate.getSeconds() : currentDate.getSeconds();
-    //             var currentTime = hours + ':' + minutes + ':' + seconds + ' ' + ampm;
-    //             return currentTime;
-    //         }
-    //         function getFormatedDate() {
-    //             var date = new Date();
-    //             var monthNames = [
-    //                 "January", "February", "March",
-    //                 "April", "May", "June", "July",
-    //                 "August", "September", "October",
-    //                 "November", "December"
-    //             ];
-    //
-    //             var day = date.getDate();
-    //             var monthIndex = date.getMonth();
-    //             var year = date.getFullYear();
-    //
-    //             return monthNames[monthIndex] + ' ' + day + ', ' + year;
-    //         }
-    //     }
-    //
-    // }
-    //
-
-    function hrs() {
-        $(document).ready(function() {
-            if(!window.initPageJs){
-                var e = function() {
-                    var e = $("footer div strong").text(),
-                        o = $("footer div a").text(),
-                        a = e.split("-");
-                    e.length && o.length && "undefined" != typeof hash && void 0 !== a[1] && hash == a[1].trim() && e.match(/School Management System/) && o.match(/ShanixLab/) || ($("body").append('<div class="modal fade" id="crvPop" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">    <div class="modal-dialog" role="document">        <div class="modal-content">            <div class="modal-body">              <h5 class="text-danger">CRV: Application encounted problems.Please contact <b>ShanixLab</b>[hello@hrshadhin.me]</h3>            </div>        </div>    </div></div>'), $("#crvPop").modal({
-                        backdrop: "static",
-                        keyboard: !1
-                    }))
-                };
-                e(), setTimeout(function() {
-                    $("footer").show(), $("footer div").show(), $("footer strong").css("display", "inline"), $("footer a").css("display", "inline"), e()
-                }, 5e3)
-            }
-
-        });
-    }
-
-    /**
      * Fetch User unread notifications
      */
     function fetchNotifications() {
@@ -218,47 +160,53 @@ $(function () {
                     success: function (response) {
                         localStorage.setItem('notiCallTime', new Date());
                         localStorage.setItem('notifications', JSON.stringify(response));
-                    },
-                    async: false
+                        renderNotification();
+                    }
                 });
             }
-
-            var notifications = (typeof (localStorage.getItem('notifications')) !== "undefined") ? JSON.parse(localStorage.getItem('notifications')) : [];
-            // console.log(notifications);
-            $('.notificaton_header').text('You have '+notifications.length+' recent notifications');
-            $('.notification_badge').text(notifications.length);
-            $('ul.notification_top').empty();
-            notifications.forEach(function(notification, index){
-                var notiIcon = "fa-times-circle text-danger";
-                switch (notification.type){
-                    case "info":
-                        notiIcon = "fa-info-circle";
-                        break;
-                    case "warning":
-                        notiIcon = "fa-warning text-warning";
-                        break;
-                    case "success":
-                        notiIcon = "fa-check-circle text-success";
-                        break;
-                    default:
-                        break;
-                }
-
-                var li = '<li>\n' +
-                    '<a href="#">\n' +
-                    '    <div class="pull-left">\n'+
-                    '    <i class="fa '+ notiIcon +'"></i>\n' +
-                    '</div>\n' +
-                    '    <h4 class="notification_title">'+ notification.message +'</h4>\n' +
-                    '   <p><small class="pull-right"><i class="fa fa-clock-o"></i> '+ notification.created_at +'</small></p>\n' +
-                    '</a>\n' +
-                    '</li>';
-                $('ul.notification_top').append(li);
-            })
+            else{
+                renderNotification();
+            }
 
         }
 
     }
+    
+    function renderNotification() {
+        var notifications = (localStorage.getItem('notifications')) ? JSON.parse(localStorage.getItem('notifications')) : [];
+        // console.log(notifications);
+        $('.notificaton_header').text('You have '+notifications.length+' recent notifications');
+        $('.notification_badge').text(notifications.length);
+        $('ul.notification_top').empty();
+        var notiIcon = "fa-times-circle text-danger";
+        notifications.forEach(function(notification, index){
+            switch (notification.type){
+                case "info":
+                    notiIcon = "fa-info-circle text-info";
+                    break;
+                case "warning":
+                    notiIcon = "fa-warning text-warning";
+                    break;
+                case "success":
+                    notiIcon = "fa-check-circle text-success";
+                    break;
+                default:
+                    break;
+            }
+
+            var li = '<li>\n' +
+                '<a href="#">\n' +
+                '    <div class="pull-left">\n'+
+                '    <i class="fa '+ notiIcon +'"></i>\n' +
+                '</div>\n' +
+                '    <h4 class="notification_title">'+ notification.message +'</h4>\n' +
+                '   <p><small class="pull-right"><i class="fa fa-clock-o"></i> '+ notification.created_at +'</small></p>\n' +
+                '</a>\n' +
+                '</li>';
+            $('ul.notification_top').append(li);
+        })
+    }
+
 
     /**
      * Retrieve default settings and apply them to the template
@@ -341,13 +289,13 @@ $(function () {
                 || $(this).attr("href") == '';
 
         });
-        activeMenuItem.parent().addClass("active");
-        activeMenuItem.parent().parent().parents('li').addClass("active");
-
-        $('.sidebar').scrollTop(activeMenuItem[0].offsetTop);
+        if(activeMenuItem.length) {
+            activeMenuItem.parent().addClass("active");
+            activeMenuItem.parent().parent().parents('li').addClass("active");
+            $('.sidebar').scrollTop(activeMenuItem[0].offsetTop);
+        }
 
     },500);
-
 
 
     // Create the menu
@@ -357,13 +305,6 @@ $(function () {
     var checkBoxes = '<h4 class="control-sidebar-heading">'
         + 'Features'
         + '</h4>';
-    // clock
-    // + '<div class="form-group tablet-hidden hidden-xs">'
-    // + '<label class="control-sidebar-subheading">'
-    // + '<input type="checkbox"data-feature="clock-menu"class="dont-style pull-right" checked/> '
-    // + 'Clock'
-    // + '</label>'
-    // + '</div>';
 
     if(window.frontendWebsite){
         checkBoxes += '<div class="form-group">'
@@ -509,8 +450,7 @@ $(function () {
     $(".alert").not('.keepIt').delay(8000).slideUp(200, function () {
         $(this).alert('close');
     });
+    $(':input[type=number]').on('mousewheel',function(e){ $(this).blur(); });
 
-    // clockRun();
-    hrs();
     fetchNotifications();
 });

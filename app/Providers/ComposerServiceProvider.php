@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
@@ -44,8 +45,7 @@ class ComposerServiceProvider extends ServiceProvider
                     'App\Http\ViewComposers\ReportMasterComposer'
                 );
 
-
-
+        \view()->share('default_academic_year', Cache::get('default_academic_year', 0));
     }
 
     /**
